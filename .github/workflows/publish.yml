@@ -23,7 +23,7 @@ jobs:
 
       # Step 3: Authenticate with GitHub Package Registry
       - name: Authenticate with GitHub Package Registry
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       # Step 4: Install dependencies
       - name: Install dependencies
